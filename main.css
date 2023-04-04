@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color:#BC8F8F;
+    color: #fff;
+    height: 5em;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    
+}
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sobre-nos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 40px 0 60px 0;
+}
+.container h2{
+    margin: 24px 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color: 	#BC8F8F;
+    border-bottom: #BC8F8F 3px solid;
+    margin-bottom: 50px;
+    
+}
+
+.sobre-nos p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+}
+.relogio-front{
+    width: 35vw;
+    margin-right: 40px;
+}
+ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: column;
+}
+ul li{
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    margin-right: 60px;
+    padding-bottom: 15px;
+    grid-column: span 1;
+    grid-row: span 1;
+    
+}
+
+ul li img{
+    width: 15vw; 
+    margin-bottom: 30px;
+}
+ul li h3{
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+ul li span{
+    background-color: #20B2AA;
+    padding: 10px;
+    vertical-align: center;
+    color: #fff;
+}
+
+
+@media screen and (min-width:641px) and (max-width:1023px){
+    .sobre-nos{
+        display: block;
+}
+.relogio-front{
+    width: 90%;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: column;
+}
+ul li{
+    margin: 10px 10px;
+    grid-column: span 1;
+    grid-row: span 1;
+}
+}
+
+@media screen and (max-width: 640px){
+    .container{
+        max-width: 640px;
+        width: 90%;
+    }
+    .sobre-nos{
+        display: block;
+    }
+    .relogio-front{
+        width: 100%;
+        margin-right: 40px;
+    }
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    p{
+        font-size: 20px;
+    }
+    ul{
+        display:table-cell;
+        vertical-align: middle;
+        width: 90%;
+        font-size: 24px;
+    }
+    ul li{
+        align-items: center;
+        margin: 15px auto;
+
+    }
+    ul li img{
+        width: 50vw;
+        border: #BC8F8F 2px solid;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .container{
+        max-width: 1024px;
+        width: 90%;
+}
+    .produtos{
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    } 
+}
